@@ -13,29 +13,31 @@
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-              integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-              crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 
-<header class="position-absolute top-0 start-0 w-100 pt-3 pb-3 mb-5" id="header">
+<header class="position-absolute top-0 start-0 w-100 pt-3 pb-3 mb-2 bg-success-subtle" id="header">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-                <div class="col-2">
-                     <a class="logo" href="#">
-                            <img src="./img/ukraine1.jpeg" style="width: 150px" alt="ukraine">
-                     </a>
-                </div>
-            <div class="col-3">
+            <div class="col-2">
+                <a class="logo" href="#">
+                    <img src="./img/ukraine1.jpeg" style="width:200px" alt="ukraine">
+                </a>
+            </div>
+            <div class="col-5">
                 <nav>
                     <ul class="d-flex gap-3 list-unstyled m-0">
                         <li class="p-3 g-col-6">
                             <a href="#" class="text-decoration-none text-primary-emphasis fs-5 font-weight-bold">NAVIGATION</a>
                         </li>
                         <li class="p-3 g-col-6">
-                            <a href="#" class="text-decoration-none text-primary-emphasis fs-5 font-weight-bold">ABOUT</a>
+                            <a href="#"
+                               class="text-decoration-none text-primary-emphasis fs-5 font-weight-bold">ABOUT</a>
                         </li>
                         <li class="p-3 g-col-6">
-                            <a href="#" class="text-decoration-none text-primary-emphasis fs-5 font-weight-bold">IMAGES</a>
+                            <a href="#"
+                               class="text-decoration-none text-primary-emphasis fs-5 font-weight-bold">IMAGES</a>
                         </li>
 
                     </ul>
@@ -45,81 +47,134 @@
         </div>
     </div>
 </header>
+
+
 <section class="container pt-5 mt-5 gap-3">
     <div class="row justify-content-md-center pt-5">
+        <!--FOTO-->
         <div class="col col-lg-3 d-flex flex-column mb-3 gap-3">
-        <img class="img-fluid rounded float-left" style="width: 200px" src="./img/bird.img" alt="bird">
-        <img class="img-fluid rounded float-left" style="width: 200px" src="./img/heard.img" alt="heard">
-        <img class="img-fluid" src="./img/hand.img" style="width: 200px" alt="hand">
-        <img class="img-fluid" src="./img/flover.img" style="width: 200px" alt="flower">
-    </div>
-    <div class="col-md-auto col-lg-6">
-        <div class="accordion" id="accordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        ABOUT
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Over the years the EU and European Parliament have consistently opposed Russian aggression against Ukraine. In a resolution adopted in December 2021, MEPs called on Russia to withdraw its troops threatening Ukraine and said any aggression by Moscow must come at a high economic and political price. Parliament had already expressed grave concern about the large Russian military build-up at the border with Ukraine and in illegally occupied Crimea in a resolution adopted in April 2021.
-
-                        In response to the Russian invasion of Ukraine, the EU adopted a wide-range of sanctions that will have severe consequences for the country.
-
-                        The European Parliament held an extraordinary plenary session on 1 March, when Ukrainian President Volodymyr Zelenskyy addressed MEPs. Parliament expressed unwavering support for Ukraine and called for further measures.
-
-                        The EU and the Parliament have supported the country by condemning Russian aggression, sanctioning those responsible and providing financial and material aid to Ukraine.
-
-                        MEPs also pushed for the creation of a special international tribunal to prosecute Russia's political and military leadership and its allies and adopted a resolution declaring Russia to be a state sponsor of terrorism.
-
-                        In addition Parliament supported Ukraine's efforts to become an EU candidate country.
-
-                        On 9 February 2023, Ukrainian President Volodymyr Zelenskyy addressed the European Parliament during a visit to Brussels. In his address to MEPs, President Zelenskyy stressed how Russia is trying to annihilate not only sovereign Ukraine, but also the European way of life.
-
-                        Check out our timeline of how the EU and the European Parliament are supporting Ukraine in 2023 and how they supported the country in 2022.
+            <div id="carouselUKRIMGRide" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bird.img" class="d-block w-100" alt="bird">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/heard.img" class="d-block w-100" alt="heard">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/hand.img" class="d-block w-100" alt="hand">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gus.img" class="d-block w-100" alt="gus">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselUKRIMGRide"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-success-subtle" aria-hidden="true"></span>
+                    <span class="visually-hidden bg-success-subtle">Previous</span>
+                </button>
+                <button class="carousel-control-next text-info-emphasis" type="button"
+                        data-bs-target="#carouselUKRIMGRide"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon  bg-success-subtle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+        </div>
 
+        <!--АККОРДЕОН-->
+        <div class="col-md-auto col-lg-6">
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-success-subtle text-dark" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ABOUT
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Over the years the EU and European Parliament have consistently opposed Russian
+                            aggression against Ukraine. In a resolution adopted in December 2021, MEPs called on
+                            Russia to withdraw its troops threatening Ukraine and said any aggression by Moscow must
+                            come at a high economic and political price. Parliament had already expressed grave
+                            concern about the large Russian military build-up at the border with Ukraine and in
+                            illegally occupied Crimea in a resolution adopted in April 2021.
 
-        </div>
-    </div>
-    <div class="col col-lg-3 d-flex flex-column mb-3 gap-3">
-        <div>
-            <button type="button" class="btn btn-primary" style="width: 150px">DONATE</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" style="width: 150px">BUY</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" style="width: 150px">MESH-WEAVING</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" style="width: 150px">UKRAINE</button>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" style="width: 150px">VYSHYVANKA</button>
-        </div>
-    </div>
-</div></section>
-<footer class="pt-5 pb-3 mt-5">
-    <div class="row pt-5 mt-5 bottom-0">
-                        <div class="pb-5 mt-5">
-                            <div class="row justify-content-center pt-5">
-        <p class="fs-6">Marharyta Blyzniuk</p>
-        <p class="fs-6">2024</p>
+                            In response to the Russian invasion of Ukraine, the EU adopted a wide-range of sanctions
+                            that will have severe consequences for the country.
+
+                            The European Parliament held an extraordinary plenary session on 1 March, when Ukrainian
+                            President Volodymyr Zelenskyy addressed MEPs. Parliament expressed unwavering support
+                            for Ukraine and called for further measures.
+
+                            The EU and the Parliament have supported the country by condemning Russian aggression,
+                            sanctioning those responsible and providing financial and material aid to Ukraine.
+
+                            MEPs also pushed for the creation of a special international tribunal to prosecute
+                            Russia's political and military leadership and its allies and adopted a resolution
+                            declaring Russia to be a state sponsor of terrorism.
+
+                            In addition Parliament supported Ukraine's efforts to become an EU candidate country.
+
+                            On 9 February 2023, Ukrainian President Volodymyr Zelenskyy addressed the European
+                            Parliament during a visit to Brussels. In his address to MEPs, President Zelenskyy
+                            stressed how Russia is trying to annihilate not only sovereign Ukraine, but also the
+                            European way of life.
+
+                            Check out our timeline of how the EU and the European Parliament are supporting Ukraine
+                            in 2023 and how they supported the country in 2022.
                         </div>
                     </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--ФОРМА-->
+        <form class="col col-lg-3 d-flex flex-column mb-3 gap-3">
+            <div class="form-floating mb-2">
+                <input type="name" class="form-control border border-primary" id="floatingNAME"
+                       placeholder="name@example.com">
+                <label for="floatingNAME" class="fs-6 fst-italic">NAME</label>
+            </div>
+            <div class="form-floating mb-2 w-90">
+                <input type="email" class="form-control border border-primary" id="floatingEmail"
+                       placeholder="Password">
+                <label for="floatingEmail" class="fs-6 fst-italic">EMAIL</label>
+            </div>
+            <div class="form-floating mb-2 w-100">
+                <input type="password" class="form-control border border-primary" id="floatingPassword"
+                       placeholder="Password">
+                <label for="floatingPassword" class="fs-6 fst-italic">PASSWORD</label>
+            </div>
+            <div class="form-floating mb-2 w-100">
+                <input type="password" class="form-control border border-primary" id="floatingCountry"
+                       placeholder="Password">
+                <label for="floatingCountry" class="fs-6 fst-italic">COUNTRY</label>
+            </div>
+            <div class="form-floating mb-2 w-100">
+                <input type="password" class="form-control border border-primary" id="floatingSupport"
+                       placeholder="Password">
+                <label for="floatingSupport" class="fs-6 fst-italic">SUPPORT</label>
+            </div>
+            <div>
+                <button class="btn btn-primary w-100" type="submit">PUSH</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<footer class="row justify-content-center bg-success-subtle h-25">
+    <div class="pt-3 pb-3 ps-5 mt-3">
+        <p class="fs-6 fst-italic">Marharyta Blyzniuk</p>
+        <p class="fs-6 fst-italic">2024</p>
     </div>
 </footer>
-
-
-</div>
-</div>
-
-
-
 
 
 </body>
